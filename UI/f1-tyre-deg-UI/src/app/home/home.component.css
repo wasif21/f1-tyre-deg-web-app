@@ -1,3 +1,21 @@
+.drop-area, 
+.drag-over-drop-area {
+  outline: 2px dashed #ccc;
+  padding: 10px;
+}
+
 .drop-area {
-  border: 2px dashed #ccc;
+  outline-offset: -12px;
+  transition:
+    outline-offset 0.2s ease-out,
+    outline-color 0.3s ease-in-out,
+    background-color 0.2s ease-out;
+}
+
+.drag-over-drop-area {
+  background-color: rgba(0, 255, 255, 0.2);
+  transition:
+    outline-offset 0.2s ease-in,
+    outline-color 0.3s ease-in-out,
+    background-color 0.2s ease-in;
 }
